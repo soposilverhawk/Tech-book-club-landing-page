@@ -1,6 +1,8 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./base/react";
+@import "./components/button";
+@import "./components/testimonialImgs";
 
 body {
   max-width: 1440px;

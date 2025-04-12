@@ -1,0 +1,20 @@
+@mixin button($width: 380px) {
+  cursor: pointer;
+  padding: $spacing-250 $spacing-300;
+  color: $neutral-900;
+  background-color: $light-salmon-50;
+  border-radius: $radius-8;
+  height: $spacing-800;
+  border: 2px solid $neutral-900;
+  width: $width;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $btn-hover-gradient;
+  }
+  &:focus {
+    box-shadow: 0 0 0 5px white, /* Gap */ 0 0 0 8px $neutral-900; /* Outer border */
+  }
+}
