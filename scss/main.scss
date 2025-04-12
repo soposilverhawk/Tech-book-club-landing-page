@@ -24,3 +24,80 @@ header {
   @include flex();
   font-size: 20px;
 }
+#section-1 {
+  @include flex();
+  gap: $spacing-800;
+}
+#section-1-desc {
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+}
+h2 {
+  font-size: 62px;
+  background: $text-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section-1-desc {
+  width: 570px;
+  height: 100%;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+}
+#section-1-desc p {
+  color: $neutral-700;
+  font-size: 20px;
+}
+.section-1-membership-container {
+  width: 400px;
+  height: 25%;
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+}
+#section-1-cover {
+  width: 50%;
+  height: 100%;
+}
+#section-1-cover img {
+  width: 100%;
+  height: 100%;
+}
+#rating-and-users-container {
+  width: 100%;
+}
+#rating-and-users-container,
+#user-imgs-cont,
+.rating-indicator-container,
+.rating-indicator-container {
+  @include flex();
+}
+.rating-indicator-container {
+  width: 50%;
+}
+.memberships-btn {
+  width: 100%;
+}
+.btn {
+  @include button($width: 100%);
+  @include flex();
+  position: relative;
+  gap: $radius-8;
+}
+.user-img-cont {
+  @include testimonialImgs();
+
+  & img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+}
+.rating-container p {
+  color: $neutral-700;
+}
