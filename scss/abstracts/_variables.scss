@@ -1,18 +1,27 @@
 // page color scheme - neutral:
 $neutral-900: #062630;
 $neutral-700: #385159;
-$neutral-200: #E6E1DF;
-$neutral-100: #FAF5F3;
+$neutral-200: #e6e1df;
+$neutral-100: #faf5f3;
 
 // page color scheme - light salmon:
-$light-salmon-500: #FEA36F;
-$light-salmon-100: #FFE2D1;
-$light-salmon-50: #FFF5EF;
+$light-salmon-500: #fea36f;
+$light-salmon-100: #ffe2d1;
+$light-salmon-50: #fff5ef;
 
 // page color scheme - gradients:
-$text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
-$bg-gradient: linear-gradient(140deg, $light-salmon-50 0%, $light-salmon-50, #9ccbdaaf 100%);
-$btn-hover-gradient: linear-gradient(90deg, $light-salmon-100 0%, $light-salmon-50 100%);
+$text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+$bg-gradient: linear-gradient(
+  140deg,
+  $light-salmon-50 0%,
+  $light-salmon-50,
+  #9ccbdaaf 100%
+);
+$btn-hover-gradient: linear-gradient(
+  90deg,
+  $light-salmon-100 0%,
+  $light-salmon-50 100%
+);
 
 // Page layout paddings:
 $pg-layout-metrics: 135px;

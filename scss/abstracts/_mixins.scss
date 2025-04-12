@@ -1,12 +1,12 @@
 @mixin flex($direction: row, $justify: space-between, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 @mixin mainContentLayout($maxWidth: 1170px, $height: 520px) {
-    margin: 120px auto;
-    max-width: $maxWidth;
-    width: 100%;
-    height: $height;
+  margin: 120px auto;
+  max-width: $maxWidth;
+  width: 100%;
+  height: $height;
 }

@@ -1,1 +1,24 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/react";
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+#header-and-section-1-container {
+  background: $bg-gradient;
+  height: 100vh;
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  padding-left: $pg-layout-metrics;
+  padding-right: $pg-layout-metrics;
+}
+header {
+  width: 100%;
+}
+#logo-container {
+  width: 10rem;
+  @include flex();
+  font-size: 20px;
+}
