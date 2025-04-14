@@ -139,3 +139,32 @@ h3 {
   color: $neutral-900;
   font-size: 50px;
 }
+#section-3 {
+  position: relative;
+}
+#section-3-desc-container {
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  position: relative;
+}
+.circle-svg {
+  position: absolute;
+  top: 130px;
+  left: 130px;
+  width: 68px;
+  height: 130px;
+  transform: rotate(70deg)
+}
+#section-3-desc-container p {
+  font-size: 20px;
+}
+#technologies-imgs-container {
+  width: 120px;
+  position: absolute;
+  @include flex($direction: column, $justify: space-between, $align: center);
+  bottom: 0;
+  left: 48%;
+}
+#github-and-react {
+  width: 100%;
+  @include flex()
+}
