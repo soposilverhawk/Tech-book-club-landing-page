@@ -101,3 +101,41 @@ h2 {
 .rating-container p {
   color: $neutral-700;
 }
+.content-layout {
+  @include mainContentLayout();
+}
+.layout-sm {
+  @include mainContentLayout(970px)
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+#section-2-hero-container,
+#section-2-desc-container,
+#section-3-hero-container,
+#section-3-desc-container {
+  width: 45%;
+}
+#section-2-desc-container {
+  @include flex($direction: column, $justify: space-around, $align: flex-start)
+}
+#club-benefits-list-container {
+  height: 50%;
+  width: 100%;
+  @include flex($direction: column, $justify: space-between, $align: flex-start)
+}
+.club-benefit {
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
+}
+.section-hero-img {
+  width: 100%;
+  height: 100%;
+  border-radius: $radius-20;
+}
+h3 {
+  color: $neutral-900;
+  font-size: 50px;
+}
