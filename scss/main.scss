@@ -29,11 +29,7 @@ header {
   gap: $spacing-800;
 }
 #section-1-desc {
-  @include flex(
-    $direction: column,
-    $justify: space-between,
-    $align: flex-start
-  );
+  @include flex($direction: column, $justify: space-between, $align: flex-start);
 }
 h2 {
   font-size: 62px;
@@ -44,7 +40,7 @@ h2 {
 #section-1-desc {
   width: 570px;
   height: 100%;
-  @include flex($direction: column, $justify: space-evenly, $align: flex-start);
+  @include flex($direction: column, $justify: space-evenly, $align: flex-start)
 }
 #section-1-desc p {
   color: $neutral-700;
@@ -53,11 +49,7 @@ h2 {
 .section-1-membership-container {
   width: 400px;
   height: 25%;
-  @include flex(
-    $direction: column,
-    $justify: space-between,
-    $align: flex-start
-  );
+  @include flex($direction: column, $justify: space-between, $align: flex-start);
 }
 #section-1-cover {
   width: 50%;
@@ -74,7 +66,7 @@ h2 {
 #user-imgs-cont,
 .rating-indicator-container,
 .rating-indicator-container {
-  @include flex();
+  @include flex()
 }
 .rating-indicator-container {
   width: 50%;
@@ -107,9 +99,21 @@ h2 {
 .layout-sm {
   @include mainContentLayout(970px)
 }
+#page-footer {
+  margin-top: 120px;
+  height: 521px;
+  background-color: $neutral-900;
+  padding: 80px $pg-layout-metrics 0 $pg-layout-metrics;
+}
+h5 {
+  color: #fff;
+}
 .flex-row {
   display: flex;
   justify-content: space-between;
+}
+.flex-column {
+  @include flex($direction: column, $justify: space-evenly, $align: center)
 }
 #section-2-hero-container,
 #section-2-desc-container,
@@ -135,10 +139,6 @@ h2 {
   height: 100%;
   border-radius: $radius-20;
 }
-h3 {
-  color: $neutral-900;
-  font-size: 50px;
-}
 #section-3 {
   position: relative;
 }
@@ -157,6 +157,10 @@ h3 {
 #section-3-desc-container p {
   font-size: 20px;
 }
+h3 {
+  color: $neutral-900;
+  font-size: 50px;
+}
 #technologies-imgs-container {
   width: 120px;
   position: absolute;
@@ -167,4 +171,29 @@ h3 {
 #github-and-react {
   width: 100%;
   @include flex()
+}
+#section-4 {
+  background: $bg-gradient;
+}
+#process-steps-container {
+  width: 80%;
+  height: 15%;
+  @include flex();
+}
+.step-container {
+  height: 100%;
+  @include flex($direction: column, $justify: space-between, $align: flex-start)
+}
+.step-number-and-next-container {
+  width: 100%;
+  @include flex();
+}
+.step-number {
+  padding: $spacing-050;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $neutral-900;
+  border-radius: $radius-4;
+  @include flex($direction: row, $justify: center, $align: center);
+  font-size: 18px;
 }
