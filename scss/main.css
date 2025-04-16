@@ -442,4 +442,64 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+}
+
+#section-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#section-5 #membership-options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  gap: 10%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#section-5 #membership-options-container .membership-option-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 30%;
+}
+#section-5 #membership-options-container .membership-option-container .option-price-and-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+#section-5 #membership-options-container .membership-option-container .option-price-and-desc h4 {
+  font-size: 24px;
+  color: #062630;
+}
+#section-5 #membership-options-container .membership-option-container .option-price-and-desc p {
+  width: 100%;
+  font-size: 34px;
+  color: #062630;
+  border-bottom: 1px solid #e6e1df;
+  padding-bottom: 24px;
+}
+#section-5 #membership-options-container .membership-option-container .option-benefit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+#section-5 #membership-options-container .membership-option-container:hover {
+  background: linear-gradient(140deg, #fff5ef 0%, #fff5ef, rgba(156, 203, 218, 0.6862745098) 100%);
+  transform: scaleY(1.1) scaleX(1.25);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */
