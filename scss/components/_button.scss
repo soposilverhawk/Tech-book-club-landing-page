@@ -1,18 +1,22 @@
-@mixin button($width: 380px) {
+@mixin button($width: 380px, $background-color: $light-salmon-50, $color: $neutral-900, $border: 2px solid $neutral-900) {
   cursor: pointer;
   padding: $spacing-250 $spacing-300;
-  color: $neutral-900;
-  background-color: $light-salmon-50;
+  color: $color;
+  background-color: $background-color;
   border-radius: $radius-8;
   height: $spacing-800;
-  border: 2px solid $neutral-900;
+  border: $border;
   width: $width;
   font-size: 18px;
   text-transform: uppercase;
   transition: all 0.2s ease;
 
   &:hover {
-    background: $btn-hover-gradient;
+    @if($background-color == $light-salmon-50) {
+      background: $btn-hover-gradient;
+    } @else if ($background-color == transparent) {
+      background-color: $neutral-700;
+    }
   }
   &:focus {
     box-shadow: 0 0 0 5px white, /* Gap */ 0 0 0 8px $neutral-900; /* Outer border */
